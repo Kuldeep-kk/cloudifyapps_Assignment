@@ -41,7 +41,7 @@ const HeroSection = ({ showSlider, setShowSlider }) => {
                                 size={20}
                                 className={styles.childIcon}
                             />
-                            <h2 className={styles.btnText}>Let's play</h2>
+                            <h2 className={styles.btnText}>Let&#39;s play</h2>
                         </div>
                     </div>
                 )}
