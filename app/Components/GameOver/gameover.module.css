@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 1.5rem;
+    z-index: 100;
+}
+
+.icon {
+    font-size: 9rem;
+    padding: 1.25rem;
+    border: 0.25rem solid;
+    border-radius: 50%;
+    color: white;
+}
+
+.message {
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.playAgainButton {
+    width: 11.625em;
+    height: 3.75em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FDF415;
+    transition: transform 0.6s ease-in-out;
+    padding: 0.625em 1.125em 0.625em 0.75em;
+    gap: 0.75em;
+    border-radius: 4.5em;
+    text-align: center;
+    font-weight: 600;
+    z-index: 1000;
+}
+
+.playAgainButton:hover {
+    background-color: #e6d915;
+    cursor: pointer;
+}
+
+.playAgainButton:active {
+    transform: scale(0.95);
+}

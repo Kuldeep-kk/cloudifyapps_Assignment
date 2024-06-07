@@ -1,0 +1,135 @@
+.heroMain {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 21em;
+    width: 90%;
+    max-width: 46.875em;
+    gap: 2.5625em;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.heroContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5625em;
+}
+
+.heroTitle {
+    color: white;
+    font-size: 3.75rem;
+    font-weight: 700;
+    line-height: 1.33em;
+    text-align: center;
+}
+
+.heroDescription {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5em;
+    text-align: center;
+    max-width: 100%;
+}
+
+.parentBtn {
+    width: 11.625em;
+    height: 3.75em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FDF415;
+    transition: transform 0.6s ease-in-out;
+    padding: 0.625em 1.125em 0.625em 0.75em;
+    gap: 0.75em;
+    border-radius: 4.5em;
+    text-align: center;
+}
+
+.parentBtn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.childIcon {
+    transition: transform 0.6s ease-in-out;
+}
+
+.parentBtn:hover .childIcon {
+    transform: rotate(180deg);
+}
+
+.btnText {
+    font-weight: 600;
+}
+
+@media (max-width: 37.5em) {
+    .heroMain {
+        height: auto;
+        padding: 2em 1em;
+        width: 100%;
+    }
+
+    .heroTitle {
+        font-size: 2.5rem;
+    }
+
+    .heroDescription {
+        font-size: 1.25rem;
+    }
+
+    .parentBtn {
+        width: auto;
+        padding: 0.5em 1em;
+    }
+}
+
+@media (min-width: 37.5em) and (max-width: 48em) {
+    .heroMain {
+        height: auto;
+        padding: 2em 1em;
+        width: 90%;
+    }
+
+    .heroTitle {
+        font-size: 3rem;
+    }
+
+    .heroDescription {
+        font-size: 1.375rem;
+    }
+
+    .parentBtn {
+        width: auto;
+        padding: 0.5em 1em;
+    }
+}
+
+@media (min-width: 48em) and (max-width: 62em) {
+    .heroMain {
+        height: auto;
+        padding: 3em 2em;
+        width: 80%;
+    }
+
+    .heroTitle {
+        font-size: 3.5rem;
+    }
+
+    .heroDescription {
+        font-size: 1.5rem;
+    }
+
+    .parentBtn {
+        width: auto;
+        padding: 0.625em 1.125em;
+    }
+}
